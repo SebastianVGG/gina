@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -37,19 +38,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Items-->
-        <div class="collapse navbar-collapse text-dark" id="mainNav">
+        <!-- el id debe ser igual al target del boton para de colapso -->
+        <div class="collapse navbar-collapse text-dark nav-main-js" id="mainNav">
           <div class="nav ms-auto text-dark flex-column flex-md-row">
             <!-- ml-auto -->
-            <a href="index.html" class="nav-link active">Homee</a>
-            <a href="#secService" class="nav-link">Services</a>
-            <a href="#secPortfolio" class="nav-link">Portafolio</a>
-            <a href="#secContact" class="nav-link">Contact</a>
+            <a href="#home" id="home_" class="nav-link active">Home</a>
+            <a href="#secService" id="secService_" class="nav-link">Services</a>
+            <a href="#secPortfolio" id="secPortfolio_" class="nav-link">Portafolio</a>
+            <a href="#secContact" id="secContact_" class="nav-link">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="home">
       <!-- Header -->
       <header class="row align-items-center header-main justify-content-center">
         <div class="col-md-7 text-center text-md-start">
