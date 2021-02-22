@@ -11,7 +11,7 @@ a {
 }
 
 .container > .row {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 /* ------ SECTIONS ------- */
 /* ------> Nav */
@@ -19,9 +19,22 @@ a {
   width: 50px;
 }
 .navbar-main .active {
-  text-decoration: underline double var(--color-yellow);
+  background-color: #333;
+	color: #fff;
+  transition: background-color .2s, color .2s;
+  /* text-decoration: overline var(--color-yellow); */
+	
+  /* text-underline-offset: 9px; */
+}
+
+.navbar-main:hover,:focus > a {
+  text-decoration: double var(black);
   text-underline-offset: 9px;
 }
+
+
+
+
 
 /* ------> Header */
 .icons-social-networks > a {
